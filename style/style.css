@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.game-wrapper {
+  width: 600px;
+  height: 600px;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.8rem;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.8rem;
+}
+
+.game-panel {
+  border-radius: 0.8rem;
+  background-color: wheat;
+  transition: all 160ms ease-in;
+}
+
+.game-panel:hover {
+  scale: 1.05;
+  rotate: -2deg;
+}
