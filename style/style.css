@@ -61,6 +61,17 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8vw;
+}
+
+.display-details {
+  font-size: 2vw;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .game-board {
@@ -71,23 +82,39 @@ a:visited {
 
 .cell {
   border: 1px solid black;
-  border-radius: 0.5vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cell:hover {
-  background-color: rgba(231, 203, 169, 0.475);
+  background-color: rgb(255, 246, 236);
 }
 
-.b-l-0 {
+.cell-text {
+  font-size: 8vw;
+  /* font-family: "Caveat", cursive; */
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  height: 2rem;
+  width: 7rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bl-0 {
   border-left: 0;
 }
-.b-r-0 {
+.br-0 {
   border-right: 0;
 }
-.b-t-0 {
+.bt-0 {
   border-top: 0;
 }
-.b-b-0 {
+.bb-0 {
   border-bottom: 0;
 }
 
