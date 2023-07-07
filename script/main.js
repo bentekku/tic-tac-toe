@@ -8,22 +8,24 @@ let isGamePlayable = true;
 
 const checkWin = () => {
   const winCombo = [
-    // horizontal winCombo
+    //  HORIZONTAL winCombo
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
-    // vertical winCombo
+    //  VERTICAL winCombo
     [0, 3, 6],
     [1, 4, 7],
     [2, 5, 8],
-    // diagonal winCombo
+    //  DIAGONAL winCombo
     [0, 4, 8],
     [2, 4, 6],
   ];
 
-  // grabbing all the 'cell-text' para
+  //  GRABBING ALL THE 'CELL-TEXT' PARA
   const cellTexts = document.querySelectorAll(".cell-text");
 
+  //  RUNNING THROUGH EVERY ARRAY OF THE 'winCombo'
+  //  THE COMPARING THE SUB-ARRAY ELEMENTS WITH EACHOTHER TO CHECK THE WINNER
   winCombo.forEach((e) => {
     if (
       cellTexts[e[0]].innerText === cellTexts[e[1]].innerText &&
@@ -43,9 +45,9 @@ const changeTurn = () => {
 cells.forEach((cell) => {
   cell.addEventListener("click", () => {
     const element = cell.querySelector(".cell-text");
+    //  CHECKING IF THE CONTENT OF THE PARA IS EMPTY AND THE GAME IS PLAYABLE
     if (element.innerText === "" && isGamePlayable) {
-      // console.log(cell);
-      element.innerHTML = turn;
+      element.innerText = turn;
       turn = changeTurn();
       moveDisplayPara.innerText = `It's ${turn}' turn`;
       checkWin();
