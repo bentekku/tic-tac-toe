@@ -30,13 +30,6 @@ This project provides a terminal-based implementation of the game in Python, all
 4. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins.
 5. If the entire board is filled and no player has three in a row, the game is a draw.
 
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-
-Enjoy the game of Tic-Tac-Toe with your friends or challenge yourself against the AI! If you have any questions, suggestions, or issues, feel free to open an issue on the [GitHub repository](https://github.com/bentekku/tic-tac-toe). Have fun playing!
-```
-
-Remember to replace the `tictactoe_screenshot.png` with an actual screenshot of the game if you have one available. Also, ensure that the file paths and instructions accurately reflect the structure and usage of the project.
